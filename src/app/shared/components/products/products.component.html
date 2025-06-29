@@ -1,0 +1,34 @@
+<div class="row">
+  <mat-card
+    *ngFor="let product of productArray"
+    class="w-100 my-5 mat-elevation-z5"
+  >
+    <mat-card-content>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="img">
+            <img [src]="product.image" [alt]="product.title" />
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h2>{{ product.title }}</h2>963+
+          <strong class="text-danger">
+            {{ product.price | currency : "INR" }}</strong
+          >
+          <p>Reviews : {{ product.review }}</p>
+          <p>Description : {{ product.description }}</p>
+        </div>
+        <div class="col-md-3">
+          <div class="button-group text-center">
+            <button mat-raised-button color="primary" class="mb-2">
+              Shop Now<mat-icon>shopping_bag</mat-icon>
+            </button>
+            <button mat-raised-button color="warn" class="mb-2">
+              Add To Cart<mat-icon>shopping_cart</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
