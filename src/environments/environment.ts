@@ -4,12 +4,9 @@
 
 export const environment = {
   production: false,
-  productsUrl:`https://fakestoreapi.com/products`,
-  reviewUrl:  `https://jsonplaceholder.typicode.com/posts`,
+  productsUrl: `https://fakestoreapi.com/products`,
+  reviewUrl: `https://jsonplaceholder.typicode.com/posts`,
   userUrl: `https://jsonplaceholder.typicode.com/users`,
-  
-
-
 };
 
 /*
